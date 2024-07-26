@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'Press Start 2P';
+  src: url('PressStart2P-Regular.eot');
+  src: local('Press Start 2P Regular'), local('PressStart2P-Regular'),
+      url('PressStart2P-Regular.eot?#iefix') format('embedded-opentype'),
+      url('PressStart2P-Regular.woff') format('woff'),
+      url('PressStart2P-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body{
+  background: var(--tg-theme-bg-color);
+  background-image: url(/img/RoxannePartyRoom.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--tg-theme-text-color);
+}
+
+.pixel {
+  font-family: 'Press Start 2P';
+  font-weight: normal;
+  font-style: normal;
+}
+
+.press-start-2p-regular {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  background: -webkit-linear-gradient(#d400ff 0%,#53cbf1 58%,#00ffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.press-start-2p-regular2 {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  background: -webkit-linear-gradient(#fefcea 0%,#f1da36 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient{
+  background: -webkit-linear-gradient(#d400ff 0%,#53cbf1 58%,#00ffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
