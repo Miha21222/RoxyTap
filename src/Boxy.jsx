@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import './CoinAnimation.css';
 
 const Boxy = (props) => {
@@ -6,7 +7,7 @@ const Boxy = (props) => {
     const [flyCoins, setFlyCoins] = useState([]);
 
     const handleCoinClick = (event) => {
-        props.setScore(prevScore => prevScore + 1)
+        props.setScore(prevScore => prevScore + 2)
         const { clientX, clientY, target } = event;
         const rect = target.getBoundingClientRect();
         const offsetX = clientX - rect.left;
