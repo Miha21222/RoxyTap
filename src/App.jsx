@@ -26,6 +26,8 @@ function App() {
 
   useEffect(() => {
     tg.ready();
+    window.Telegram.WebApp.expand();
+    window.Telegram.WebApp.disableVerticalSwipes(); 
   }, [])
 
   return (
