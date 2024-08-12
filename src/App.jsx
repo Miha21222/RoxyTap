@@ -1,41 +1,28 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import './App.css'
 import Taskbar from './Taskbar';
-import Scorebar from './Scorebar';
-import Boxy from './Boxy';
+import { Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import Links from './pages/Links';
+
 const tg = window.Telegram.WebApp;
 
 function App() {
 
-  function isLocalStorageEmpty(key) {
-    const data = localStorage.getItem(key);
-
-    if (data === null || data === '') {
-      return 0; // Данных нет
-    }
-
-    return JSON.parse(localStorage.getItem(key)); // Данные существуют
-  }
-
-  const [newScore, setScore] = useState(() => isLocalStorageEmpty('score'));
-
-  useEffect(() => {
-    localStorage.setItem('score', JSON.stringify(newScore))
-  }, [newScore])
-
-
   useEffect(() => {
     tg.ready();
     window.Telegram.WebApp.expand();
-    window.Telegram.WebApp.disableVerticalSwipes(); 
+    window.Telegram.WebApp.disableVerticalSwipes();
   }, [])
 
   return (
     <>
       <div className="flex flex-col">
-        <Boxy setScore={setScore} />
-        <Scorebar newScore={newScore} setScore={setScore} />
         <Taskbar />
+        <Routes>
+          <Route path='/' element={<Home />}/>
+          <Route path='/links' element={<Links />}/>
+        </Routes>
       </div>
     </>
   )

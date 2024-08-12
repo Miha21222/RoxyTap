@@ -40,6 +40,12 @@ body{
   -webkit-text-fill-color: transparent;
 }
 
+.press-start-2p-regular-no-color {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .press-start-2p-regular2 {
   font-family: "Press Start 2P", system-ui;
   font-weight: 400;
