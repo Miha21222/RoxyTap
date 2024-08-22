@@ -113,7 +113,7 @@ const Home = () => {
                     </div>
                 </div>
             )}
-            <button onClick={toggleErase} className="fixed top-20 left-5 p-1 rounded-md border-2 border-purple-700 border-dotted active:scale-110 active:border-green-500 active:text-green-500 duration-100 ease-linear">
+            <button onClick={toggleErase} className="fixed hidden top-20 left-5 p-1 rounded-md border-2 border-purple-700 border-dotted active:scale-110 active:border-green-500 active:text-green-500 duration-100 ease-linear">
                 <MdDeleteForever size={50} className="text-rose-600" />
             </button>
             <button onClick={playMusic} className="fixed top-20 right-5 p-1 rounded-md border-2 border-purple-700 border-dotted active:scale-110 active:border-green-500 active:text-green-500 duration-100 ease-linear">
