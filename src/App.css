@@ -73,6 +73,11 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+#link a.active{
+  --tw-text-opacity: 1;
+    color: rgb(34 197 94 / var(--tw-text-opacity)) /* #22c55e */;
+}
+
 html {
 
   -ms-touch-action: manipulation;

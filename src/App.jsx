@@ -5,10 +5,12 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Links from './pages/Links';
 import Shop from './pages/Shop';
+import Share from './pages/Share';
 
 const tg = window.Telegram.WebApp;
 
 function App() {
+
 
   useEffect(() => {
     tg.ready();
@@ -21,9 +23,10 @@ function App() {
       <div className="flex flex-col">
         <Taskbar />
         <Routes>
-          <Route path='/' element={<Home />}/>
-          <Route path='/links' element={<Links />}/>
-          <Route path='/shop' element={<Shop />}/>
+          <Route path='/' element={<Home />} />
+          <Route path='/links' element={<Links />} />
+          <Route path='/shop' element={<Shop />} />
+          <Route path='/share' element={<Share />} />
         </Routes>
       </div>
     </>

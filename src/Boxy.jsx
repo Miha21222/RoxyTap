@@ -1,13 +1,13 @@
 import React, { useState, useContext } from 'react';
 import './CoinAnimation.css';
 import { ConfigContext } from './context/ConfigContext';
+import { Vibration } from "react";
 
 const Boxy = () => {
 
     const [flyCoins, setFlyCoins] = useState([]);
-    const { configValue } = useContext(ConfigContext);
-    const { setConfigValue } = useContext(ConfigContext);
-    const { setScore } = useContext(ConfigContext);
+    const { configValue, setConfigValue, setScore, coin, vibro } = useContext(ConfigContext);
+    const tap = new Audio('./sounds/tap.wav');
 
     const handleCoinClick = (event) => {
         event.preventDefault(); // Предотвращаем стандартное поведение, чтобы не было задержек
@@ -18,6 +18,14 @@ const Boxy = () => {
         const offsetY = clientY - rect.top;
 
         setScore(prevScore => prevScore + configValue);
+
+        tap.volume = 0.3;
+
+        tap.play();
+
+        if (vibro === 1) {
+            navigator.vibrate(50);
+        }
 
         const newFlyCoin = {
             id: Date.now(),
@@ -35,13 +43,13 @@ const Boxy = () => {
     };
 
     const test = () => {
-        setScore(6000);
+        setScore(60000);
         setConfigValue(1);
     }
 
     return (
         <>
-            <img src="img/coin.png" alt="boxy" className="scale-110 active:scale-100 duration-75 ease-linear" onTouchStart={handleCoinClick} />
+            <img src={coin} alt="boxy" className="scale-110 active:scale-100 duration-75 ease-linear" onTouchStart={handleCoinClick} />
             {flyCoins.map(coin => (
                 <React.Fragment key={coin.id}>
                     <img
