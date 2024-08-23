@@ -77,7 +77,7 @@ const Home = () => {
     }, [newScore])
 
     return (
-        <div className="flex flex-col">
+        <div className="flex flex-col overflow-scroll p-5">
             {modal4 && (
                 <div className="flex justify-center items-center w-screen h-screen fixed top-0 left-0 z-20">
                     <div className="w-screen h-screen bg-black fixed top-0 left-0 z-30 opacity-50"></div>
@@ -129,10 +129,10 @@ const Home = () => {
                     <p className='press-start-2p-regular-no-color text-xs text-center'>Unmuted!</p>
                 </div>
             )}
-            <button onClick={toggleCoin} className="fixed top-[35rem] right-5 p-1 rounded-md border-2 border-purple-700 border-dotted active:scale-110 active:border-green-500 active:text-green-500 duration-100 ease-linear">
+            <button onClick={toggleCoin} className="fixed top-[35rem] bottom-[6.5rem] right-5 p-1 rounded-md border-2 border-purple-700 border-dotted active:scale-110 active:border-green-500 active:text-green-500 duration-100 ease-linear">
                 <RiCopperCoinFill className="text-yellow-200" size={50} />
             </button>
-            <button onClick={toggleVibro} className="fixed top-[35rem] left-5 p-1 rounded-md border-2 border-purple-700 border-dotted active:scale-110 active:border-green-500 active:text-green-500 duration-100 ease-linear">
+            <button onClick={toggleVibro} className="fixed top-[35rem] bottom-[6.5rem] left-5 p-1 rounded-md border-2 border-purple-700 border-dotted active:scale-110 active:border-green-500 active:text-green-500 duration-100 ease-linear">
                 {vibro === 1 ? <MdVibration size={50} className="text-green-500" /> : <MdVibration size={50} className="text-rose-600" />}
             </button>
             <Boxy />

@@ -1,7 +1,6 @@
 import React, { useState, useContext } from 'react';
 import './CoinAnimation.css';
 import { ConfigContext } from './context/ConfigContext';
-import { Vibration } from "react";
 
 const Boxy = () => {
 
@@ -21,7 +20,9 @@ const Boxy = () => {
 
         tap.volume = 0.3;
 
-        tap.play();
+        setTimeout(() => {
+            tap.play();
+        }, 50);
 
         if (vibro === 1) {
             navigator.vibrate(50);
@@ -53,9 +54,9 @@ const Boxy = () => {
             {flyCoins.map(coin => (
                 <React.Fragment key={coin.id}>
                     <img
-                        src="img/star2.png"
+                        src="img/rxc2.png"
                         alt="Flying Coin"
-                        className="fly-coin size-28"
+                        className="fly-coin size-16"
                         style={{
                             position: 'absolute',       // Позиционируем относительно родителя
                             left: `${coin.left}px`,    // Координаты для позиционирования монетки

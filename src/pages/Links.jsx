@@ -4,7 +4,7 @@ import { BsGithub } from "react-icons/bs";
 
 const Links = () => {
     return (
-        <>
+        <div className="flex flex-col overflow-scroll h-[30rem]">
             <div className="flex fixed top-0 left-0 w-screen bg-black justify-center p-3 text-white shadow-xl items-center border-b-4 border-purple-700 border-dashed">
                 <h1 className="text-4xl press-start-2p-regular text-center tracking-widest align-middle">JOIN OUR SOCIALS!</h1>
             </div>
@@ -26,7 +26,7 @@ const Links = () => {
                     <h2 className="text-2xl press-start-2p-regular-no-color text-center align-middle text-white m-5">GITHUB</h2>
                 </a>
             </div>
-        </>
+        </div>
     );
 };
 
