@@ -8,7 +8,7 @@ import { ConfigProvider } from './context/ConfigContext.jsx'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ConfigProvider>
-      <BrowserRouter basename='/tg-app-front/'>
+      <BrowserRouter basename='/RoxyTap/'>
         <App />
       </BrowserRouter>
     </ConfigProvider>
