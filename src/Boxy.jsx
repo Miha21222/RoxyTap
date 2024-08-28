@@ -50,7 +50,7 @@ const Boxy = () => {
 
     return (
         <>
-            <img src={coin} alt="boxy" className="scale-110 active:scale-100 duration-75 ease-linear" onTouchStart={handleCoinClick} />
+            <img src={coin} alt="boxy" className="active:scale-90 duration-75 ease-linear" onTouchStart={handleCoinClick} />
             {flyCoins.map(coin => (
                 <React.Fragment key={coin.id}>
                     <img

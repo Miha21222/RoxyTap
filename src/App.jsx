@@ -1,6 +1,5 @@
 import { useEffect } from 'react'
 import './App.css'
-import Taskbar from './Taskbar';
 import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Links from './pages/Links';
@@ -20,8 +19,7 @@ function App() {
 
   return (
     <>
-      <div className="flex flex-col">
-        <Taskbar />
+      <div className="flex">
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/links' element={<Links />} />

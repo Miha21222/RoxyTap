@@ -1,5 +1,6 @@
 import Boxy from "../Boxy";
 import Scorebar from "../Scorebar";
+import Taskbar from "../Taskbar";
 import { useEffect, useContext, useState } from 'react'
 import { ConfigContext } from "../context/ConfigContext";
 import { IoVolumeMute } from "react-icons/io5";
@@ -77,66 +78,71 @@ const Home = () => {
     }, [newScore])
 
     return (
-        <div className="flex flex-col overflow-scroll p-5">
-            {modal4 && (
-                <div className="flex justify-center items-center w-screen h-screen fixed top-0 left-0 z-20">
-                    <div className="w-screen h-screen bg-black fixed top-0 left-0 z-30 opacity-50"></div>
-                    <div className="flex justify-center items-center z-40 w-[60%] h-[60%]">
-                        <div className="bg-black z-50 w-full h-full rounded-xl border-2 border-purple-700 border-dashed p-5 flex flex-col items-center justify-between gap-5">
-                            <h2 className="text-white press-start-2p-regular2 text-md">SELECT YOUR COIN!</h2>
-                            <button className="press-start-2p-regular-no-color text-purple-600 border-2 border-dashed rounded-lg border-purple-600 active:scale-110 ease-linear duration-100" onClick={() => selectCoin(1)}>ROXY</button>
-                            {bought4 && (
-                                <button className="press-start-2p-regular-no-color text-orange-400 border-2 border-dashed rounded-lg border-orange-400 active:scale-110 ease-linear duration-100" onClick={() => selectCoin(2)}>FREDDY</button>
-                            )}
-                            {bought5 && (
-                                <button className="press-start-2p-regular-no-color text-lime-400 border-2 border-dashed rounded-lg border-lime-400 active:scale-110 ease-linear duration-100" onClick={() => selectCoin(3)}>MONTY</button>
-                            )}
-                            {bought6 && (
-                                <button className="press-start-2p-regular-no-color text-pink-400 border-2 border-dashed rounded-lg border-pink-400 active:scale-110 ease-linear duration-100" onClick={() => selectCoin(4)}>CHICA</button>
-                            )}
-                            <button className="press-start-2p-regular-no-color text-red-600 border-2 border-dashed border-red-600 rounded-xl flex gap-1 items-center p-2 active:scale-110 ease-linear duration-100 self-end text-xs" onClick={toggleCoin}>CLOSE</button>
-                        </div>
-                    </div>
-                </div>
-            )}
-            {modal3 && (
-                <div className="flex justify-center items-center w-screen h-screen fixed top-0 left-0 z-20">
-                    <div className="w-screen h-screen bg-black fixed top-0 left-0 z-30 opacity-50"></div>
-                    <div className="flex justify-center items-center z-40 w-[80%] h-[25%]">
-                        <div className="bg-black z-50 w-full h-full rounded-xl border-2 border-purple-700 border-dashed p-5 flex flex-col items-center justify-center gap-5">
-                            <h2 className="text-white press-start-2p-regular-no-color text-sm">ARE YOU SURE YOU WANT TO ERASE YOUR DATA?</h2>
-                            <div className="flex justify-between gap-5">
-                                <button className="press-start-2p-regular-no-color text-yellow-200 border-2 border-dashed border-yellow-200 rounded-xl flex gap-1 items-center p-2 active:scale-110 ease-linear duration-100" onClick={() => eraseData()}><FaCheck size={20} />YES</button>
-                                <button className="press-start-2p-regular-no-color text-red-600 border-2 border-dashed border-red-600 rounded-xl flex gap-1 items-center p-2 active:scale-110 ease-linear duration-100" onClick={toggleErase}><IoCloseSharp size={30} />CLOSE</button>
+        <div className="flex flex-col overflow-scroll h-screen justify-between items-center">
+            <Scorebar className="z-50" />
+            <div className="flex flex-col p-3 z-40 overflow-scroll gap-5">
+                {modal4 && (
+                    <div className="flex justify-center items-center w-screen h-screen fixed top-0 left-0 z-20">
+                        <div className="w-screen h-screen bg-black fixed top-0 left-0 z-30 opacity-50"></div>
+                        <div className="flex justify-center items-center z-40 w-[60%] h-[60%]">
+                            <div className="bg-black z-50 w-full h-full rounded-xl border-2 border-purple-700 border-dashed p-5 flex flex-col items-center justify-between gap-5">
+                                <h2 className="text-white press-start-2p-regular2 text-md">SELECT YOUR COIN!</h2>
+                                <button className="press-start-2p-regular-no-color text-purple-600 border-2 border-dashed rounded-lg border-purple-600 active:scale-110 ease-linear duration-100" onClick={() => selectCoin(1)}>ROXY</button>
+                                {bought4 && (
+                                    <button className="press-start-2p-regular-no-color text-orange-400 border-2 border-dashed rounded-lg border-orange-400 active:scale-110 ease-linear duration-100" onClick={() => selectCoin(2)}>FREDDY</button>
+                                )}
+                                {bought5 && (
+                                    <button className="press-start-2p-regular-no-color text-lime-400 border-2 border-dashed rounded-lg border-lime-400 active:scale-110 ease-linear duration-100" onClick={() => selectCoin(3)}>MONTY</button>
+                                )}
+                                {bought6 && (
+                                    <button className="press-start-2p-regular-no-color text-pink-400 border-2 border-dashed rounded-lg border-pink-400 active:scale-110 ease-linear duration-100" onClick={() => selectCoin(4)}>CHICA</button>
+                                )}
+                                <button className="press-start-2p-regular-no-color text-red-600 border-2 border-dashed border-red-600 rounded-xl flex gap-1 items-center p-2 active:scale-110 ease-linear duration-100 self-end text-xs" onClick={toggleCoin}>CLOSE</button>
                             </div>
                         </div>
                     </div>
+                )}
+                {modal3 && (
+                    <div className="flex justify-center items-center w-screen h-screen fixed top-0 left-0 z-20">
+                        <div className="w-screen h-screen bg-black fixed top-0 left-0 z-30 opacity-50"></div>
+                        <div className="flex justify-center items-center z-40 w-[80%] h-[25%]">
+                            <div className="bg-black z-50 w-full h-full rounded-xl border-2 border-purple-700 border-dashed p-5 flex flex-col items-center justify-center gap-5">
+                                <h2 className="text-white press-start-2p-regular-no-color text-sm">ARE YOU SURE YOU WANT TO ERASE YOUR DATA?</h2>
+                                <div className="flex justify-between gap-5">
+                                    <button className="press-start-2p-regular-no-color text-yellow-200 border-2 border-dashed border-yellow-200 rounded-xl flex gap-1 items-center p-2 active:scale-110 ease-linear duration-100" onClick={() => eraseData()}><FaCheck size={20} />YES</button>
+                                    <button className="press-start-2p-regular-no-color text-red-600 border-2 border-dashed border-red-600 rounded-xl flex gap-1 items-center p-2 active:scale-110 ease-linear duration-100" onClick={toggleErase}><IoCloseSharp size={30} />CLOSE</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                )}
+                <button onClick={toggleErase} className="fixed hidden top-20 left-5 p-1 rounded-md border-2 border-purple-700 border-dotted active:scale-110 active:border-green-500 active:text-green-500 duration-100 ease-linear">
+                    <MdDeleteForever size={50} className="text-rose-600" />
+                </button>
+                <button onClick={playMusic} className="self-end p-1 rounded-md border-2 border-purple-700 border-dotted active:scale-110 active:border-green-500 active:text-green-500 duration-100 ease-linear">
+                    {count === 0 ? <IoVolumeMute className="text-red-500" size={50} /> : <IoVolumeHigh className="text-purple-700" size={50} />}
+                </button>
+                <Boxy />
+                {modal && (
+                    <div className="flex fixed justify-center bg-black border border-dotted border-purple-700 top-[9.3rem] right-2 p-1 w-44">
+                        <p className='press-start-2p-regular-no-color text-xs text-center'>Muted!</p>
+                    </div>
+                )}
+                {modal2 && (
+                    <div className="flex fixed justify-center bg-black border border-dotted border-purple-700 top-[9.3rem] right-2 p-1 w-44">
+                        <p className='press-start-2p-regular-no-color text-xs text-center'>Unmuted!</p>
+                    </div>
+                )}
+                <div className="flex justify-between items-center w-full">
+                    <button onClick={toggleVibro} className="p-1 rounded-md border-2 border-purple-700 border-dotted active:scale-110 active:border-green-500 active:text-green-500 duration-100 ease-linear">
+                        {vibro === 1 ? <MdVibration size={50} className="text-green-500" /> : <MdVibration size={50} className="text-rose-600" />}
+                    </button>
+                    <button onClick={toggleCoin} className="p-1 rounded-md border-2 border-purple-700 border-dotted active:scale-110 active:border-green-500 active:text-green-500 duration-100 ease-linear">
+                        <RiCopperCoinFill className="text-yellow-200" size={50} />
+                    </button>
                 </div>
-            )}
-            <button onClick={toggleErase} className="fixed hidden top-20 left-5 p-1 rounded-md border-2 border-purple-700 border-dotted active:scale-110 active:border-green-500 active:text-green-500 duration-100 ease-linear">
-                <MdDeleteForever size={50} className="text-rose-600" />
-            </button>
-            <button onClick={playMusic} className="fixed top-20 right-5 p-1 rounded-md border-2 border-purple-700 border-dotted active:scale-110 active:border-green-500 active:text-green-500 duration-100 ease-linear">
-                {count === 0 ? <IoVolumeMute className="text-red-500" size={50} /> : <IoVolumeHigh className="text-purple-700" size={50} />}
-            </button>
-            {modal && (
-                <div className="flex fixed justify-center bg-black border border-dotted border-purple-700 top-[9.3rem] right-2 p-1 w-44">
-                    <p className='press-start-2p-regular-no-color text-xs text-center'>Muted!</p>
-                </div>
-            )}
-            {modal2 && (
-                <div className="flex fixed justify-center bg-black border border-dotted border-purple-700 top-[9.3rem] right-2 p-1 w-44">
-                    <p className='press-start-2p-regular-no-color text-xs text-center'>Unmuted!</p>
-                </div>
-            )}
-            <button onClick={toggleCoin} className="fixed top-[35rem] bottom-[6.5rem] right-5 p-1 rounded-md border-2 border-purple-700 border-dotted active:scale-110 active:border-green-500 active:text-green-500 duration-100 ease-linear">
-                <RiCopperCoinFill className="text-yellow-200" size={50} />
-            </button>
-            <button onClick={toggleVibro} className="fixed top-[35rem] bottom-[6.5rem] left-5 p-1 rounded-md border-2 border-purple-700 border-dotted active:scale-110 active:border-green-500 active:text-green-500 duration-100 ease-linear">
-                {vibro === 1 ? <MdVibration size={50} className="text-green-500" /> : <MdVibration size={50} className="text-rose-600" />}
-            </button>
-            <Boxy />
-            <Scorebar />
+            </div>
+            <Taskbar className="z-50" />
         </div>
     );
 };

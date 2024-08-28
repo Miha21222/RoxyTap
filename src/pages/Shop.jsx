@@ -5,6 +5,7 @@ import { FaRegTimesCircle } from "react-icons/fa";
 import { TbSquareNumber2 } from "react-icons/tb";
 import { TbSquareNumber5 } from "react-icons/tb";
 import { GiCard10Spades } from "react-icons/gi";
+import Taskbar from "../Taskbar";
 
 const Shop = () => {
 
@@ -150,9 +151,9 @@ const Shop = () => {
     }, [configValue])
 
     return (
-        <>
+        <div className='flex flex-col h-screen w-screen z-40 justify-between items-center gap-10'>
             {modal && (
-                <div className="flex justify-center items-center w-screen h-screen fixed top-0 left-0 z-20">
+                <div className="flex justify-center items-center w-screen h-screen fixed top-0 left-0 z-50">
                     <div className="w-screen h-screen bg-black fixed top-0 left-0 z-30 opacity-50" onClick={toggleModal}></div>
                     <div className="flex justify-center items-center z-40 w-[80%] h-[25%]" onClick={toggleModal}>
                         <div className="bg-black z-50 w-full h-full rounded-xl border-2 border-purple-700 border-dashed p-5 flex flex-col items-center justify-center gap-5">
@@ -163,7 +164,7 @@ const Shop = () => {
                 </div>
             )}
             {modal2 && (
-                <div className="flex justify-center items-center w-screen h-screen fixed top-0 left-0 z-20">
+                <div className="flex justify-center items-center w-screen h-screen fixed top-0 left-0 z-50">
                     <div className="w-screen h-screen bg-black fixed top-0 left-0 z-30 opacity-50" onClick={toggleModal2}></div>
                     <div className="flex justify-center items-center z-40 w-[80%] h-[25%]" onClick={toggleModal2}>
                         <div className="bg-black z-50 w-full h-full rounded-xl border-2 border-purple-700 border-dashed p-5 flex flex-col items-center justify-center gap-5">
@@ -173,10 +174,10 @@ const Shop = () => {
                     </div>
                 </div>
             )}
-            <div className="flex fixed top-0 left-0 w-screen bg-black justify-center p-3 text-white shadow-xl items-center border-b-4 border-purple-700 border-dashed">
+            <div className="flex w-screen bg-black justify-center p-3 text-white shadow-xl items-center border-b-4 border-purple-700 border-dashed">
                 <p className="text-4xl press-start-2p-regular text-center tracking-widest align-middle">THE SHOP</p>
             </div>
-            <div className="grid grid-cols-2 gap-10 overflow-scroll h-[31rem] w-screen fixed left-0 top-28 bottom-32 bg-black bg-opacity-50 border-b-2 border-t-2 border-purple-700 border-dashed p-5">
+            <div className="z-30 grid grid-cols-2 gap-10 overflow-scroll w-full h-full bg-black bg-opacity-50 border-b-2 border-t-2 border-purple-700 border-dashed p-5">
                 <div className="flex justify-center">
                     <div className="flex flex-col justify-center items-center gap-3">
                         <TbSquareNumber2 className="text-emerald-400 border-2 border-emerald-400 rounded-md p-1" size={100} />
@@ -186,8 +187,8 @@ const Shop = () => {
                         )}
                         {but && (
                             <div className="flex justify-between items-center border-2 border-dotted rounded-md border-yellow-100 p-1 active:scale-110 active:opacity-70 duration-100" onClick={() => multiOnClick(1)}>
-                                <p className="text-xl press-start-2p-regular2">5000</p>
-                                <img src="./img/rxc.png" alt="" className="size-10" />
+                                <p className="text-md press-start-2p-regular2">5000</p>
+                                <img src="./img/rxc.png" alt="" className="size-8" />
                             </div>
                         )}
                     </div>
@@ -201,8 +202,8 @@ const Shop = () => {
                         )}
                         {but2 && (
                             <div className="flex justify-between items-center border-2 border-dotted rounded-md border-yellow-100 p-1 active:scale-110 active:opacity-70 duration-100" onClick={() => multiOnClick(2)}>
-                                <p className="text-xl press-start-2p-regular2">12500</p>
-                                <img src="./img/rxc.png" alt="" className="size-10" />
+                                <p className="text-md press-start-2p-regular2">12500</p>
+                                <img src="./img/rxc.png" alt="" className="size-8" />
                             </div>
                         )}
                     </div>
@@ -216,8 +217,8 @@ const Shop = () => {
                         )}
                         {but3 && (
                             <div className="flex justify-between items-center border-2 border-dotted rounded-md border-yellow-100 p-1 active:scale-110 active:opacity-70 duration-100" onClick={() => multiOnClick(3)}>
-                                <p className="text-xl press-start-2p-regular2">50000</p>
-                                <img src="./img/rxc.png" alt="" className="size-10" />
+                                <p className="text-md press-start-2p-regular2">50000</p>
+                                <img src="./img/rxc.png" alt="" className="size-8" />
                             </div>
                         )}
                     </div>
@@ -231,8 +232,8 @@ const Shop = () => {
                         )}
                         {but4 && (
                             <div className="flex justify-between items-center border-2 border-dotted rounded-md border-yellow-100 p-1 active:scale-110 active:opacity-70 duration-100" onClick={() => multiOnClick(4)}>
-                                <p className="text-xl press-start-2p-regular2">10000</p>
-                                <img src="./img/rxc.png" alt="" className="size-10" />
+                                <p className="text-md press-start-2p-regular2">10000</p>
+                                <img src="./img/rxc.png" alt="" className="size-8" />
                             </div>
                         )}
                     </div>
@@ -246,8 +247,8 @@ const Shop = () => {
                         )}
                         {but5 && (
                             <div className="flex justify-between items-center border-2 border-dotted rounded-md border-yellow-100 p-1 active:scale-110 active:opacity-70 duration-100" onClick={() => multiOnClick(5)}>
-                                <p className="text-xl press-start-2p-regular2">15000</p>
-                                <img src="./img/rxc.png" alt="" className="size-10" />
+                                <p className="text-md press-start-2p-regular2">15000</p>
+                                <img src="./img/rxc.png" alt="" className="size-8" />
                             </div>
                         )}
                     </div>
@@ -261,14 +262,15 @@ const Shop = () => {
                         )}
                         {but6 && (
                             <div className="flex justify-between items-center border-2 border-dotted rounded-md border-yellow-100 p-1 active:scale-110 active:opacity-70 duration-100" onClick={() => multiOnClick(6)}>
-                                <p className="text-xl press-start-2p-regular2">30000</p>
-                                <img src="./img/rxc.png" alt="" className="size-10" />
+                                <p className="text-md press-start-2p-regular2">30000</p>
+                                <img src="./img/rxc.png" alt="" className="size-8" />
                             </div>
                         )}
                     </div>
                 </div>
             </div>
-        </>
+            <Taskbar className="z-40" />
+        </div>
     );
 };
 
