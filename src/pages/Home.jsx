@@ -25,7 +25,7 @@ const Home = () => {
 
     const playMusic = () => {
         setCount(prevCount => (prevCount === 0 ? 1 : 0)); // Переключение значения между 0 и 1
-        if (count === 1) {
+        /*if (count === 1) {
             setModal(!modal);
             setModal2(false);
             setTimeout(() => {
@@ -38,7 +38,7 @@ const Home = () => {
             setTimeout(() => {
                 setModal2(false);
             }, 1500);
-        }
+        }*/
     };
 
     const toggleErase = () => {
@@ -78,7 +78,7 @@ const Home = () => {
     }, [newScore])
 
     return (
-        <div className="flex flex-col overflow-scroll h-screen justify-between items-center">
+        <div className="flex flex-col overflow-scroll h-screen justify-between items-center" id="back_roxy_room">
             <Scorebar className="z-50" />
             <div className="flex flex-col p-3 z-40 overflow-scroll gap-5">
                 {modal4 && (
@@ -119,25 +119,32 @@ const Home = () => {
                 <button onClick={toggleErase} className="fixed hidden top-20 left-5 p-1 rounded-md border-2 border-purple-700 border-dotted active:scale-110 active:border-green-500 active:text-green-500 duration-100 ease-linear">
                     <MdDeleteForever size={50} className="text-rose-600" />
                 </button>
-                <button onClick={playMusic} className="self-end p-1 rounded-md border-2 border-purple-700 border-dotted active:scale-110 active:border-green-500 active:text-green-500 duration-100 ease-linear">
+                <button onClick={playMusic} className="flex justify-between items-center gap-2 self-end p-1 rounded-md border-2 border-purple-700 border-dotted active:scale-110 active:border-green-500 active:text-green-500 duration-100 ease-linear">
+                    <div className="">
+                        <p className='press-start-2p-regular-no-color text-xs text-center'>Music:</p>
+                        {count === 0 ? <p className='press-start-2p-regular-no-color text-xs text-center'>muted</p> : <p className='press-start-2p-regular-no-color text-xs text-center'>unmuted</p>}
+                    </div>
                     {count === 0 ? <IoVolumeMute className="text-red-500" size={50} /> : <IoVolumeHigh className="text-purple-700" size={50} />}
                 </button>
                 <Boxy />
                 {modal && (
-                    <div className="flex fixed justify-center bg-black border border-dotted border-purple-700 top-[9.3rem] right-2 p-1 w-44">
+                    <div className="flex fixed justify-center bg-black border border-dotted border-purple-700 top-[9.3rem] right-20 p-1 w-44">
                         <p className='press-start-2p-regular-no-color text-xs text-center'>Muted!</p>
                     </div>
                 )}
                 {modal2 && (
-                    <div className="flex fixed justify-center bg-black border border-dotted border-purple-700 top-[9.3rem] right-2 p-1 w-44">
+                    <div className="flex fixed justify-center bg-black border border-dotted border-purple-700 top-[9.3rem] right-20 p-1 w-44">
                         <p className='press-start-2p-regular-no-color text-xs text-center'>Unmuted!</p>
                     </div>
                 )}
-                <div className="flex justify-between items-center w-full">
-                    <button onClick={toggleVibro} className="p-1 rounded-md border-2 border-purple-700 border-dotted active:scale-110 active:border-green-500 active:text-green-500 duration-100 ease-linear">
+                <div className="flex justify-between items-center w-full gap-3">
+                    <button onClick={toggleVibro} className="flex justify-center items-center gap-2 p-1 rounded-md border-2 border-purple-700 border-dotted active:scale-110 active:border-green-500 active:text-green-500 duration-100 ease-linear">
                         {vibro === 1 ? <MdVibration size={50} className="text-green-500" /> : <MdVibration size={50} className="text-rose-600" />}
+                        <p className='press-start-2p-regular-no-color text-xs text-center'>Vibration</p>
                     </button>
-                    <button onClick={toggleCoin} className="p-1 rounded-md border-2 border-purple-700 border-dotted active:scale-110 active:border-green-500 active:text-green-500 duration-100 ease-linear">
+
+                    <button onClick={toggleCoin} className="flex justify-center items-center p-1 rounded-md border-2 border-purple-700 border-dotted active:scale-110 active:border-green-500 active:text-green-500 duration-100 ease-linear">
+                        <p className='press-start-2p-regular-no-color text-xs text-center'>Coin selection</p>
                         <RiCopperCoinFill className="text-yellow-200" size={50} />
                     </button>
                 </div>

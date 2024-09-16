@@ -151,7 +151,7 @@ const Shop = () => {
     }, [configValue])
 
     return (
-        <div className='flex flex-col h-screen w-screen z-40 justify-between items-center gap-10'>
+        <div className='flex flex-col h-screen w-screen z-40 justify-between items-center gap-10' id='back_roxy_room'>
             {modal && (
                 <div className="flex justify-center items-center w-screen h-screen fixed top-0 left-0 z-50">
                     <div className="w-screen h-screen bg-black fixed top-0 left-0 z-30 opacity-50" onClick={toggleModal}></div>
@@ -174,7 +174,7 @@ const Shop = () => {
                     </div>
                 </div>
             )}
-            <div className="flex w-screen bg-black justify-center p-3 text-white shadow-xl items-center border-b-4 border-purple-700 border-dashed">
+            <div className="flex w-screen bg-black justify-center p-3 text-white shadow-xl shadow-violet-600 items-center border-b-4 border-purple-700 border-dashed">
                 <p className="text-4xl press-start-2p-regular text-center tracking-widest align-middle">THE SHOP</p>
             </div>
             <div className="z-30 grid grid-cols-2 gap-10 overflow-scroll w-full h-full bg-black bg-opacity-50 border-b-2 border-t-2 border-purple-700 border-dashed p-5">

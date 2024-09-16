@@ -5,8 +5,8 @@ import Taskbar from "../Taskbar";
 
 const Links = () => {
     return (
-        <div className="flex flex-col overflow-scroll h-screen justify-between items-center z-50">
-            <div className="flex bg-black justify-center p-3 text-white shadow-xl items-center border-b-4 border-purple-700 border-dashed">
+        <div className="flex flex-col overflow-scroll h-screen justify-between items-center z-50" id="back_roxy_room">
+            <div className="flex bg-black justify-center p-3 text-white shadow-xl shadow-violet-600 items-center border-b-4 border-purple-700 border-dashed">
                 <h1 className="text-4xl press-start-2p-regular text-center tracking-widest align-middle">JOIN OUR SOCIALS!</h1>
             </div>
             <div className="flex flex-col justify-around items-center w-full h-full z-40 overflow-scroll">

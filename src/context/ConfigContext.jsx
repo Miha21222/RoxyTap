@@ -25,6 +25,16 @@ export const ConfigProvider = ({ children }) => {
         return JSON.parse(localStorage.getItem(key)); // Данные существуют
     }
 
+    function checkString(key) {
+        const data = localStorage.getItem(key);
+
+        if (data === null || data === '') {
+            return ''; // Данных нет
+        }
+
+        return data; // Данные существуют
+    }
+
     function checkBut(key) {
         const data = localStorage.getItem(key);
 
@@ -89,6 +99,8 @@ export const ConfigProvider = ({ children }) => {
 
     const [vibro, setVibro] = useState(1);
 
+    const [name, setName] = useState(() => checkString('name'));
+
     useEffect(() => {
         if (count === 1) {
             music.current.play(); // Запуск аудио при переключении на 0
@@ -97,13 +109,17 @@ export const ConfigProvider = ({ children }) => {
         }
     }, [count]);
 
+    useEffect(() => {
+        localStorage.setItem('name', name)
+    }, [name]);
+
     return (
         <ConfigContext.Provider value={{
             configValue, setConfigValue, newScore, setScore, but, setBut, bought, setBought, count, setCount,
             but2, setBut2, bought2, setBought2, but3, setBut3, bought3, setBought3,
             but4, setBut4, bought4, setBought4, but5, setBut5, bought5, setBought5,
             but6, setBut6, bought6, setBought6, coin, setCoin, music, setMusic,
-            vibro, setVibro
+            vibro, setVibro, name, setName
         }}>
             {children}
         </ConfigContext.Provider>

@@ -19,8 +19,8 @@ const Share = () => {
     }
 
     return (
-        <div className="flex flex-col justify-between items-center h-screen overflow-scroll z-50 w-screen">
-            <div className="flex  bg-black justify-center p-3 text-white shadow-xl items-center border-b-4 border-purple-700 border-dashed">
+        <div className="flex flex-col justify-between items-center h-screen overflow-scroll z-50 w-screen" id='back_roxy_room'>
+            <div className="flex  bg-black justify-center p-3 text-white shadow-xl shadow-violet-600 items-center border-b-4 border-purple-700 border-dashed">
                 <p className="text-4xl press-start-2p-regular text-center tracking-widest align-middle">SHARE OUR APP!</p>
             </div>
             <div className="flex flex-col justify-around items-center z-40 overflow-scroll w-full h-full">
