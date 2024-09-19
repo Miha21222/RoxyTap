@@ -12,10 +12,10 @@ const Scorebar = () => {
             <div className="flex w-screen bg-black justify-between p-2 text-white items-center border-b-2 border-yellow-100 border-dashed">
                 <div className="flex gap-3 items-center">
                     <LuUserSquare2 size={35} className="text-violet-600 border border-yellow-100 rounded-lg" />
-                    <p className="text-md press-start-2p-regular-no-color text-emerald-400 text-left tracking-widest">{name}</p>
+                    <p className="text-md press-start-2p-regular-no-color text-emerald-400 text-left tracking-widest text-sm">{name}</p>
                 </div>
                 <div className="flex items-center active:scale-90 ease-linear duration-100">
-                <p className="text-xs press-start-2p-regular-no-color text-white text-right tracking-wide">coming soon..</p>
+                <p className="press-start-2p-regular-no-color text-white text-right tracking-wide">coming soon...</p>
                     <BsGlobe size={35} className="text-violet-600 rounded-full border border-yellow-100 p-1" />
                 </div>
             </div>

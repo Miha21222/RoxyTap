@@ -87,15 +87,15 @@ const Home = () => {
                         <div className="flex justify-center items-center z-40 w-[60%] h-[60%]">
                             <div className="bg-black z-50 w-full h-full rounded-xl border-2 border-purple-700 border-dashed p-5 flex flex-col items-center justify-between gap-5">
                                 <h2 className="text-white press-start-2p-regular2 text-md">SELECT YOUR COIN!</h2>
-                                <button className="press-start-2p-regular-no-color text-purple-600 border-2 border-dashed rounded-lg border-purple-600 active:scale-110 ease-linear duration-100" onClick={() => selectCoin(1)}>ROXY</button>
+                                <button className="text-base press-start-2p-regular-no-color text-purple-600 border-2 border-dashed rounded-lg border-purple-600 active:scale-110 ease-linear duration-100" onClick={() => selectCoin(1)}>ROXY</button>
                                 {bought4 && (
-                                    <button className="press-start-2p-regular-no-color text-orange-400 border-2 border-dashed rounded-lg border-orange-400 active:scale-110 ease-linear duration-100" onClick={() => selectCoin(2)}>FREDDY</button>
+                                    <button className="text-base press-start-2p-regular-no-color text-orange-400 border-2 border-dashed rounded-lg border-orange-400 active:scale-110 ease-linear duration-100" onClick={() => selectCoin(2)}>FREDDY</button>
                                 )}
                                 {bought5 && (
-                                    <button className="press-start-2p-regular-no-color text-lime-400 border-2 border-dashed rounded-lg border-lime-400 active:scale-110 ease-linear duration-100" onClick={() => selectCoin(3)}>MONTY</button>
+                                    <button className="text-base press-start-2p-regular-no-color text-lime-400 border-2 border-dashed rounded-lg border-lime-400 active:scale-110 ease-linear duration-100" onClick={() => selectCoin(3)}>MONTY</button>
                                 )}
                                 {bought6 && (
-                                    <button className="press-start-2p-regular-no-color text-pink-400 border-2 border-dashed rounded-lg border-pink-400 active:scale-110 ease-linear duration-100" onClick={() => selectCoin(4)}>CHICA</button>
+                                    <button className="text-base press-start-2p-regular-no-color text-pink-400 border-2 border-dashed rounded-lg border-pink-400 active:scale-110 ease-linear duration-100" onClick={() => selectCoin(4)}>CHICA</button>
                                 )}
                                 <button className="press-start-2p-regular-no-color text-red-600 border-2 border-dashed border-red-600 rounded-xl flex gap-1 items-center p-2 active:scale-110 ease-linear duration-100 self-end text-xs" onClick={toggleCoin}>CLOSE</button>
                             </div>
@@ -121,10 +121,10 @@ const Home = () => {
                 </button>
                 <button onClick={playMusic} className="flex justify-between items-center gap-2 self-end p-1 rounded-md border-2 border-purple-700 border-dotted active:scale-110 active:border-green-500 active:text-green-500 duration-100 ease-linear">
                     <div className="">
-                        <p className='press-start-2p-regular-no-color text-xs text-center'>Music:</p>
-                        {count === 0 ? <p className='press-start-2p-regular-no-color text-xs text-center'>muted</p> : <p className='press-start-2p-regular-no-color text-xs text-center'>unmuted</p>}
+                        <p className='press-start-2p-regular-no-color text-white text-center'>Music:</p>
+                        {count === 0 ? <p className='press-start-2p-regular-no-color text-white text-center'>muted</p> : <p className='press-start-2p-regular-no-color text-white text-center'>unmuted</p>}
                     </div>
-                    {count === 0 ? <IoVolumeMute className="text-red-500" size={50} /> : <IoVolumeHigh className="text-purple-700" size={50} />}
+                    {count === 0 ? <IoVolumeMute className="text-red-500" size={40} /> : <IoVolumeHigh className="text-purple-700" size={40} />}
                 </button>
                 <Boxy />
                 {modal && (
@@ -139,13 +139,13 @@ const Home = () => {
                 )}
                 <div className="flex justify-between items-center w-full gap-3">
                     <button onClick={toggleVibro} className="flex justify-center items-center gap-2 p-1 rounded-md border-2 border-purple-700 border-dotted active:scale-110 active:border-green-500 active:text-green-500 duration-100 ease-linear">
-                        {vibro === 1 ? <MdVibration size={50} className="text-green-500" /> : <MdVibration size={50} className="text-rose-600" />}
-                        <p className='press-start-2p-regular-no-color text-xs text-center'>Vibration</p>
+                        {vibro === 1 ? <MdVibration size={40} className="text-green-500" /> : <MdVibration size={40} className="text-rose-600" />}
+                        <p className='press-start-2p-regular-no-color text-white text-center'>Vibration</p>
                     </button>
 
                     <button onClick={toggleCoin} className="flex justify-center items-center p-1 rounded-md border-2 border-purple-700 border-dotted active:scale-110 active:border-green-500 active:text-green-500 duration-100 ease-linear">
-                        <p className='press-start-2p-regular-no-color text-xs text-center'>Coin selection</p>
-                        <RiCopperCoinFill className="text-yellow-200" size={50} />
+                        <p className='press-start-2p-regular-no-color text-white text-center'>Coin selection</p>
+                        <RiCopperCoinFill className="text-yellow-200" size={40} />
                     </button>
                 </div>
             </div>

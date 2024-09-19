@@ -61,7 +61,7 @@ const Login = () => {
             <div className="fixed z-40 top-0 left-0 bg-black opacity-50 w-screen h-screen" id="back"></div>
             <div className="flex flex-col justify-between items-center h-screen w-screen z-30" id="start">
                 <div className="flex bg-black justify-center p-3 text-white shadow-xl shadow-cyan-400 items-center border-b-4 border-purple-700 border-dashed w-full">
-                    <p className="text-3xl press-start-2p-regular text-center align-middle tracking-widest">AND WHAT'S YOUR NAME?</p>
+                    <p className="text-xl press-start-2p-regular text-center align-middle tracking-widest">AND WHAT'S YOUR NAME?</p>
                 </div>
                 {!inputFocused && (
                 <div className="flex w-[80%] -mt-10 -mb-10" id="pic2"><img src="./img/roxy.png" alt="" className="" /></div>
@@ -71,8 +71,7 @@ const Login = () => {
                     <input 
                     id="input" 
                     type="text" 
-                    placeholder="Player name..." 
-                    className="flex p-3 w-full h-full bg-transparent press-start-2p-regular-no-color text-xs outline-none"
+                    className="flex p-3 w-full h-full bg-transparent press-start-2p-regular-no-color text-white text-xl outline-none"
                     onFocus={handleFocus}
                     onBlur={handleBlur} />
                 </div> : 
@@ -80,8 +79,7 @@ const Login = () => {
                     <input 
                     id="input" 
                     type="text" 
-                    placeholder="Player name..." 
-                    className="flex p-3 w-full h-full bg-transparent press-start-2p-regular-no-color text-xs outline-none"
+                    className="flex p-3 w-full h-full bg-transparent press-start-2p-regular-no-color text-white text-xl outline-none"
                     onFocus={handleFocus}
                     onBlur={handleBlur} />
                 </div>}
