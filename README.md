@@ -42,14 +42,14 @@ A simple page with list of my socials for people to visit
 
 ![shop](https://cdn.discordapp.com/attachments/707961272909692979/1288047989155430420/photo_2024-09-24_11-01-52.jpg?ex=66f3c3ab&is=66f2722b&hm=441e8fc3c64edde17c2d5707b3e0be4cbe0e33c26ae1097eedaec6bd584d86e7&)
 
-A page full of goodies a player can purchase once they have enough points. After the purcahse of any items it can't be purchased again and doesn't stack up
+A page full of goodies a player can purchase once they have enough points. After the purcahse of any items it can't be purchased again and doesn't stack up. 
 Main goods include:
 - Boosters (increase the amoint of points player gets from each tap on the main button in home page)
 - Coin/button skins (changes the appearence of the main coin/button, can be changed in Coin selection menu in the Home page)
 
 ### Share page
 
-![share page](https://cdn.discordapp.com/attachments/707961272909692979/1288047989155430420/photo_2024-09-24_11-01-52.jpg?ex=66f3c3ab&is=66f2722b&hm=441e8fc3c64edde17c2d5707b3e0be4cbe0e33c26ae1097eedaec6bd584d86e7&)
+![share page](https://cdn.discordapp.com/attachments/707961272909692979/1288047989495038015/photo_2024-09-24_11-01-54.jpg?ex=66f3c3ab&is=66f2722b&hm=f088998dc08f2770c3d0eaee287b6a342180bde3ec53a67a80a23b6c36424629&)
 
 Another simple page that has one button to copy the link to the game and later can be sent to others 
 
