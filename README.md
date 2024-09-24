@@ -2,7 +2,7 @@
 
 ## Introduction
 
-RoxyTap is a non-commercial clicker game, inspired by the OG clicker games and modern tap-to-earn projects. This game is my first proper practise with such game format, this is not meant to be a commercial project, as it uses assets that aren't mine. All the assets, including backgrounds, coin'button images and music belong to [@SteelWoolStudio](https://x.com/SteelWoolStudio) and Scott Cawthon
+RoxyTap is a non-commercial clicker game, inspired by the OG clicker games and modern tap-to-earn projects. This game is my first proper practise with such game format, this is not meant to be a commercial project, as it uses assets that aren't mine. All the assets, including backgrounds, coin/button images and music belong to [@SteelWoolStudio](https://x.com/SteelWoolStudio) and Scott Cawthon
 
 The game can be broken down into 5 main pages:
 - Title screen
