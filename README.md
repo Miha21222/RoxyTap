@@ -36,13 +36,13 @@ On the bottom of the screen there's a navbar, allowing to navigate through 4 mai
 
 ![socials page](https://cdn.discordapp.com/attachments/707961272909692979/1288047988798783498/photo_2024-09-24_11-01-51.jpg?ex=66f3c3ab&is=66f2722b&hm=ad57eac5dcdde0337640604e6b124330888220753225800e9f86abcf9ee276cd&)
 
-A simple pages with list of my socials for people to visit
+A simple page with list of my socials for people to visit
 
 ### Shop
 
 ![shop](https://cdn.discordapp.com/attachments/707961272909692979/1288047989155430420/photo_2024-09-24_11-01-52.jpg?ex=66f3c3ab&is=66f2722b&hm=441e8fc3c64edde17c2d5707b3e0be4cbe0e33c26ae1097eedaec6bd584d86e7&)
 
-A page full of goodies a player can purchase once they have enough points. After the purcahse of any items it can't be purchased twice and doesn't stack up
+A page full of goodies a player can purchase once they have enough points. After the purcahse of any items it can't be purchased again and doesn't stack up
 Main goods include:
 - Boosters (increase the amoint of points player gets from each tap on the main button in home page)
 - Coin/button skins (changes the appearence of the main coin/button, can be changed in Coin selection menu in the Home page)
