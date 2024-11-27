@@ -15,7 +15,7 @@ The game can be broken down into 5 main pages:
 
 ### Title screen
 
-![title screen](https://drive.google.com/file/d/1x9BA0n4B7P0HO3ppuD0ZwvdAKFVmNSRR/preview)
+![title screen](https://cdn.discordapp.com/attachments/707961272909692979/1288047988048003092/photo_2024-09-24_11-01-48.jpg?ex=674823ab&is=6746d22b&hm=3b471b866745f6c4530afc9092669362373f29def5505b5942e9d04e26c69805&)
 
 A simple title screen with some animations that greets players every time they open the game
 
