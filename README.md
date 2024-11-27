@@ -21,7 +21,7 @@ A simple title screen with some animations that greets players every time they o
 
 ### Home page
 
-![home page](https://cdn.discordapp.com/attachments/707961272909692979/1288047988383420478/photo_2024-09-24_11-01-50.jpg?ex=66f3c3ab&is=66f2722b&hm=54bba655b68cae2fbd0e0c5eea4d5a3d848177640c6bcf00798b9bb56ca2e0b7&)
+![home page](https://cdn.discordapp.com/attachments/707961272909692979/1288047988383420478/photo_2024-09-24_11-01-50.jpg?ex=674823ab&is=6746d22b&hm=e917e19cd6bf18895871de59e2d161ddf1c65c677f3418de2587bc052686c6c4&)
 
 The main page where the gameplay begins. Here you can tap on the main coin/button to earn points, which you can later spend in the shop for boosters and cosmetics. 
 In addition in the top left corner there's a player's nickname, which player can type in after leaving tittle screen during first launch of the game.
@@ -34,13 +34,13 @@ On the bottom of the screen there's a navbar, allowing to navigate through 4 mai
 
 ### Socials page
 
-![socials page](https://cdn.discordapp.com/attachments/707961272909692979/1288047988798783498/photo_2024-09-24_11-01-51.jpg?ex=66f3c3ab&is=66f2722b&hm=ad57eac5dcdde0337640604e6b124330888220753225800e9f86abcf9ee276cd&)
+![socials page](https://cdn.discordapp.com/attachments/707961272909692979/1288047988798783498/photo_2024-09-24_11-01-51.jpg?ex=674823ab&is=6746d22b&hm=f2f7d6afdefa79817acba4dacb4ebf5965f884abdd752925ac8f2c8772e5b4b1&)
 
 A simple page with list of my socials for people to visit
 
 ### Shop
 
-![shop](https://cdn.discordapp.com/attachments/707961272909692979/1288047989155430420/photo_2024-09-24_11-01-52.jpg?ex=66f3c3ab&is=66f2722b&hm=441e8fc3c64edde17c2d5707b3e0be4cbe0e33c26ae1097eedaec6bd584d86e7&)
+![shop](https://cdn.discordapp.com/attachments/707961272909692979/1288047989155430420/photo_2024-09-24_11-01-52.jpg?ex=674823ab&is=6746d22b&hm=ddd485a155fc85adf2fa30cbb81679cf6ea2d7835abc87c0f8549fb3c24ec217&)
 
 A page full of goodies a player can purchase once they have enough points. After the purcahse of any items it can't be purchased again and doesn't stack up. 
 Main goods include:
@@ -49,7 +49,7 @@ Main goods include:
 
 ### Share page
 
-![share page](https://cdn.discordapp.com/attachments/707961272909692979/1288047989495038015/photo_2024-09-24_11-01-54.jpg?ex=66f3c3ab&is=66f2722b&hm=f088998dc08f2770c3d0eaee287b6a342180bde3ec53a67a80a23b6c36424629&)
+![share page](https://cdn.discordapp.com/attachments/707961272909692979/1288047989495038015/photo_2024-09-24_11-01-54.jpg?ex=674823ab&is=6746d22b&hm=65a4b374fb5577e49d2b46779200fed6c0b135836ef83179d91aa21aba74177b&)
 
 Another simple page that has one button to copy the link to the game and later can be sent to others 
 
