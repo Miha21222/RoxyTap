@@ -15,7 +15,7 @@ The game can be broken down into 5 main pages:
 
 ### Title screen
 
-![title screen](https://drive.google.com/file/d/1x9BA0n4B7P0HO3ppuD0ZwvdAKFVmNSRR/view?usp=drive_link)
+![title screen](https://drive.google.com/file/d/1x9BA0n4B7P0HO3ppuD0ZwvdAKFVmNSRR/preview)
 
 A simple title screen with some animations that greets players every time they open the game
 
